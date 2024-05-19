@@ -27,7 +27,7 @@
   }
   
   .chat-message-container::-webkit-scrollbar-track {
-    background: #2d2d2d; /* Color of the scrollbar track */
+    background: #1a1a1a; /* Color of the scrollbar track */
     border-radius: 10px; /* Rounded corners for the track */
   }
   
@@ -39,3 +39,30 @@
   .chat-message-container::-webkit-scrollbar-thumb:hover {
     background: #555; /* Color of the scrollbar thumb on hover */
   }
+
+  .chat-message-container {
+    width: 100%; /* ensures the container takes full width */
+  }
+  
+  /* Adjust the message display to take the full width */
+  .message {
+    display: flex;
+    justify-content: space-between; /* Adjusts items to fill the space */
+    width: 100%; /* Message blocks take full available width */
+    padding: 8px; /* Optional padding for better readability */
+  }
+  
+  .message .content {
+    flex: 1; /* Allows the message content to fill available space */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .message.user {
+    justify-content: flex-end; /* Aligns user messages to the right */
+  }
+  
+  .message.ai {
+    justify-content: flex-start; /* Aligns AI messages to the left */
+  }
+  

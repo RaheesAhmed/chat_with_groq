@@ -2,4 +2,4 @@
 
 Work in Progress
 
-![Screenshot](public/groq.png)
+![Screenshot](@/public/groq.png)
